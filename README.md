@@ -1,6 +1,6 @@
 # 🌿 Reed
 
-**Twig** is a lightweight, embeddable programming language designed for intuitive and declarative data transformation. Its MVP focuses on parsing and transforming JSON into CSV or filtered JSON, making it perfect for quick ETL tasks, developer tooling, and data pre-processing pipelines.
+**Reed** is a lightweight, embeddable programming language designed for intuitive and declarative data transformation. Its MVP focuses on parsing and transforming JSON into CSV or filtered JSON, making it perfect for quick ETL tasks, developer tooling, and data pre-processing pipelines.
 
 ---
 
