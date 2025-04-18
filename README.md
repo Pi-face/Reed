@@ -1,10 +1,24 @@
-# Twig
-Programming Language for fun, or learning purposes. 
+# 🌿 Twig
 
+**Twig** is a lightweight, embeddable programming language designed for intuitive and declarative data transformation. Its MVP focuses on parsing and transforming JSON into CSV or filtered JSON, making it perfect for quick ETL tasks, developer tooling, and data pre-processing pipelines.
 
-# 1. Data Transformation Language
-Use Case: Manipulate JSON or CSV files using a simple, clean DSL (domain-specific language).
+---
 
-Why It's Fun: Teaches you parsing, AST construction, and eval logic.
+## 🚀 MVP Overview
 
-Bonus: You can actually use it in your other projects.
+Twig is currently in its Minimum Viable Product (MVP) stage, focused on supporting simple but powerful transformation operations for structured data.
+
+### ✅ Supported Features
+
+- Load JSON files into named variables
+- Filter array-based JSON data using simple conditions
+- Select and project specific fields from objects
+- Export the result as a CSV or transformed JSON
+
+### 🔤 Example Script
+
+```twig
+load "data.json" as data
+filter data where age > 25
+select data.name, data.email
+save data to "output.csv"
