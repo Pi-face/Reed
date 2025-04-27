@@ -1,4 +1,5 @@
 use std::env;
+use std::fs;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -9,7 +10,10 @@ fn main() {
         // if the user did not provide more than 1 it didnt contain the file in the list.
     }
     let filename = &args[1];
-    println!("Filename: {}", filename);
+    let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
+    for(index, line) in contents.lines().enumerate(){
+        print!("Line {}: {}", index+1, line);
+    }
 }
 
  

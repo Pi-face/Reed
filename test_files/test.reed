@@ -1,0 +1,4 @@
+'load "data.json" as data' > examples/test.reed
+'filter data where age > 25' >> examples/test.reed
+'select data.name, data.email' >> examples/test.reed
+'save data to "output.csv"' >> examples/test.reed
