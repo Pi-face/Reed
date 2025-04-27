@@ -26,5 +26,6 @@ save data to "output.csv"
 ```
 
 ### Rust means obligatory miku pic.
-![image](https://github.com/user-attachments/assets/3edaec7a-89d5-47e2-8735-7c0c908848e1)
+![miku](https://github.com/user-attachments/assets/df57764d-e12a-4802-86ec-72476bfaf0bb)
+
 
