@@ -22,3 +22,9 @@ load "data.json" as data
 filter data where age > 25
 select data.name, data.email
 save data to "output.csv"
+
+```
+
+### Rust means obligatory miku pic.
+![image](https://github.com/user-attachments/assets/3edaec7a-89d5-47e2-8735-7c0c908848e1)
+
