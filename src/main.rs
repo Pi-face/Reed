@@ -1,5 +1,9 @@
 mod command;
+mod parser;
+
 use command::Command;
+use parser::parse_line;
+
 use std::env;
 use std::fs;
 
@@ -14,7 +18,10 @@ fn main() {
     let filename = &args[1];
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
     for(index, line) in contents.lines().enumerate(){
-        print!("Line {}: {}", index+1, line);
+        match parse_line(line) {
+            Some(command) => println!("Line {}: {:?}", index + 1, command),
+            None => println!("Line {}: Invalid command", index + 1),
+        }   
     }
     let test = Command::Filter {
         variable: "variable".to_string(),
