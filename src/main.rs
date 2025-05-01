@@ -1,3 +1,5 @@
+mod command;
+use command::Command;
 use std::env;
 use std::fs;
 
@@ -14,6 +16,9 @@ fn main() {
     for(index, line) in contents.lines().enumerate(){
         print!("Line {}: {}", index+1, line);
     }
+    let test = Command::Filter {
+        variable: "variable".to_string(),
+        condition: "condition".to_string(),
+    };
+    println!("{:?}", test);
 }
-
- 
